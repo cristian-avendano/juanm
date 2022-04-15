@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Davish-Black-Rounded';
+    src: url(Fuentes/Davish-Black-Rounded.otf);
+}
+
+@font-face{
+    font-family: 'Davish-Black';
+    src: url(Fuentes/Davish-Black.otf);
+}
+@font-face{
+    font-family: 'Davish-Bold-Italic';
+    src: url(Fuentes/Davish-Bold-Italic.otf);
+}
+@font-face{
+    font-family: 'Davish-Bold';
+    src: url(Fuentes/Davish-Bold.otf);
+}
+@font-face{
+    font-family: 'Davish-Light';
+    src: url(Fuentes/Davish-Light.otf);
+}
+@font-face{
+    font-family: 'Davish-Normal';
+    src: url(Fuentes/Davish-Normal.otf);
+}
+@font-face{
+    font-family: 'Davish-Thin';
+    src: url(Fuentes/Davish-Thin.otf);
+}
+
+
+.navbar {
+    padding: 22px 0;
+    background: #ffffff !important;
+    border-bottom: none !important;
+}
+.icon-bar{
+    background-color: #6D6C6B !important;
+}
+.logo-header{
+    height: 57px;
+    margin-left: 100px;
+}
+
+.navbar .navbar-header .navbar-brand .logo-header {
+  height: 100%;
+}
+
+
+
+#shopping-cart{
+    border: none;
+    background: none;
+    margin-top: 10px;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    color: #6D6C6B !important;
+    font-family: 'Davish-Black-Rounded';
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14pt;
+    transition: all .3s ease-in;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover {
+    color: #C8A833 !important;
+}
+
+nav .navbar-nav .nav-item .nav-link.location {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+}
+
+nav .navbar-nav .nav-item .nav-link.location:hover {
+    background: deepskyblue !important;
+    color: #6D6C6B !important;
+}
+
+.navbar-toggle {
+    border: 1px solid #6d6c6b00 !important;
+    transition: all .3s ease-in;
+}
+
+.navbar-toggle:hover {
+    background: #C8A833 !important;
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: transparent !important;
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: inherit !important;
+}
+
+@media (max-width: 998px) {
+    nav .navbar-nav .nav-item .nav-link {
+        padding: 15px 6px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .navbar-nav .nav-item .nav-link {
+        padding: 15px 15px !important;
+    }
+
+    nav .navbar-nav .nav-item .nav-link.location {
+        border: none;
+    }
+
+    nav .navbar-nav .nav-item .nav-link.location:hover {
+        background: transparent !important;
+        color: deepskyblue !important;
+    }
+}
+
+.section{
+    margin-top: 100px;
+}
+
+h1{
+    font-size: 40pt !important;
+    font-family: 'Davish-Bold' !important;
+    color: #6D6C6B !important;
+    text-align: center;
+}
+
+h2{
+    font-size: 50pt !important;
+    font-family: 'Davish-Black-Rounded' !important;
+    color: #6D6C6B;
+    text-align: center
+}
+p{
+    font-size: 30pt;
+    color: #6D6C6B;
+    text-align: center;
+}
+ 
+/* --- --- CAROUSEL --- --- */
+#carrusel-m{
+    margin-top: 150px;
+}
+
+.carousel__contenedor-m {
+	position: relative;
+}
+
+.carousel__anterior-m,
+.carousel__siguiente-m {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+    border-radius: 5rem;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background-color: #C8A833;
+	color: #fff;
+	opacity: 80%;
+}
+
+.carousel__anterior-m:hover,
+.carousel__siguiente-m:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior-m {
+	left: 20px;
+}
+
+.carousel__siguiente-m {
+	right: 20px;
+}
+
+.carousel__lista-m {
+	overflow: hidden;
+}
+
+.carousel__elemento-m {
+	text-align: center;
+}
+
+.carousel__indicadores-m .glider-dot {
+	display: block;
+	width: 4px;
+	height: 4px;
+    margin-top: 20px;
+	background: #C8A833 !important;
+	opacity: .2;
+	border-radius: 5rem;
+}
+
+.carousel__indicadores-m .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores-m .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal-m {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+.card-desc{
+    width: 80%;
+    margin-left: 35px;
+    margin-top: -10px;
+    font-size: 15pt;
+    font-family: 'Davish-Normal' !important;
+    color: #6D6C6B;
+    text-align: justify;
+}
